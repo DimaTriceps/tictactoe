@@ -25,9 +25,6 @@ namespace ConsoleApp14
     class TicTacToe
     {
         public readonly State[,] Area = new State[3, 3];
-
-
-        private State[,] ResultArea = new State[3, 3];
         
 
         int CountSteps = 0;
@@ -40,7 +37,6 @@ namespace ConsoleApp14
                 for (int j = 0; j < Area.GetLength(1); j++)
                 {
                     Area[i, j] = State.Unset;
-                    ResultArea[i, j] = State.Unset;
                 }
             }
         }
